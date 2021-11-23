@@ -22,23 +22,30 @@ let findProduct = (order, allProducts) => {
 // Function whose responsibility is to find the employee for an order
 const findEmployee = (order, allEmployees) => {
     let orderEmployee = null
-let i =0;
+
     for (const employee of allEmployees) {
-        console.log(`loop ${i}: `);
-        console.log(employee.id);
-        console.log(order.employeeId);
-        i++;
         if (employee.id === order.employeeId) {
-            if (employee !== null) {
             orderEmployee = employee
-            console.log("orderemp");
-            console.log(orderEmployee);
-            }
         }
     }
 
     return orderEmployee
 }
+
+//sora's code
+/*const findEmployee = (order, allEmployees) => {
+    let orderEmployee = null
+
+    for (const employee of allEmployees) {
+        if (employee.id === order.employeeId) {
+            orderEmployee = employee
+        }
+    }
+
+    return orderEmployee
+}*/
+
+
 
 export const Orders = () => {
     let html = ""
