@@ -32,20 +32,6 @@ const findEmployee = (order, allEmployees) => {
     return orderEmployee
 }
 
-//sora's code
-/*const findEmployee = (order, allEmployees) => {
-    let orderEmployee = null
-
-    for (const employee of allEmployees) {
-        if (employee.id === order.employeeId) {
-            orderEmployee = employee
-        }
-    }
-
-    return orderEmployee
-}*/
-
-
 
 export const Orders = () => {
     let html = ""
